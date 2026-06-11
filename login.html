@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>ITN MASS CAMPAIGN 2026 - Login</title>
+
+<style>
+:root{
+    --plasma1:#0d0887;
+    --plasma2:#6a00a8;
+    --plasma3:#b12a90;
+    --plasma4:#e16462;
+    --plasma5:#fca636;
+    --plasma6:#f0f921;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI,sans-serif;
+}
+
+body{
+    background:#f3f3f8;
+    min-height:100vh;
+}
+
+.container{
+    width:100%;
+    max-width:430px;
+    margin:auto;
+    min-height:100vh;
+    background:#f7f7fb;
+    display:flex;
+    flex-direction:column;
+}
+
+/* ==========================
+HEADER
+========================== */
+
+.header{
+    background:linear-gradient(
+    135deg,
+    var(--plasma1),
+    var(--plasma2),
+    #ff007f);
+    padding:15px 10px;
+    color:#fff;
+}
+
+.header-row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:8px;
+}
+
+.icf-logo{
+    width:85px;
+    height:85px;
+    background:#fff;
+    border-radius:14px;
+    object-fit:contain;
+    padding:4px;
+}
+
+.title{
+    flex:1;
+    text-align:center;
+    font-size:20px;
+    font-weight:800;
+    line-height:1.2;
+}
+
+.nmcp-side{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.nmcp-logo{
+    width:85px;
+    height:85px;
+    background:#fff;
+    border-radius:14px;
+    object-fit:contain;
+    padding:4px;
+}
+
+.campaign{
+    font-size:10px;
+    font-weight:700;
+    margin-top:5px;
+    text-align:center;
+}
+
+/* ==========================
+LOGIN PAGE
+========================== */
+
+.login-page{
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+}
+
+.login-card{
+    width:100%;
+    background:#ffffff;
+    border-radius:25px;
+    padding:25px;
+    border:2px solid #df67aa;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.login-logo{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.login-logo img{
+    width:200px;
+    max-width:100%;
+    object-fit:contain;
+}
+
+.login-title{
+    text-align:center;
+    font-size:24px;
+    font-weight:800;
+    color:#5d1ca5;
+    margin-bottom:25px;
+}
+
+.form-group{
+    margin-bottom:18px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:8px;
+    color:#4d2198;
+    font-weight:700;
+}
+
+.form-group input{
+    width:100%;
+    padding:14px;
+    border:2px solid #ddd;
+    border-radius:12px;
+    font-size:15px;
+    outline:none;
+}
+
+.form-group input:focus{
+    border-color:#b12a90;
+}
+
+.login-btn{
+    width:100%;
+    border:none;
+    border-radius:12px;
+    padding:15px;
+    font-size:16px;
+    font-weight:700;
+    color:white;
+    cursor:pointer;
+    margin-top:10px;
+    background:linear-gradient(
+        135deg,
+        var(--plasma1),
+        var(--plasma2),
+        var(--plasma3)
+    );
+}
+
+.scan-btn{
+    width:100%;
+    border:none;
+    border-radius:12px;
+    padding:15px;
+    font-size:16px;
+    font-weight:700;
+    cursor:pointer;
+    margin-top:12px;
+    color:#222;
+    background:linear-gradient(
+        135deg,
+        var(--plasma5),
+        var(--plasma6)
+    );
+}
+
+.login-btn:hover,
+.scan-btn:hover{
+    opacity:.95;
+}
+
+/* ==========================
+FOOTER
+========================== */
+
+.footer{
+    background:linear-gradient(
+    135deg,
+    #ff007f,
+    #ff8533,
+    #ffe600);
+    text-align:center;
+    padding:14px;
+    font-size:18px;
+    font-weight:800;
+    color:#000;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+
+    <div class="header">
+
+        <div class="header-row">
+
+            <img src="Logo.png" class="icf-logo" alt="ICF Logo">
+
+            <div class="title">
+                National Malaria Control Program
+            </div>
+
+            <div class="nmcp-side">
+                <img src="NMCP.png" class="nmcp-logo" alt="NMCP Logo">
+                <div class="campaign">
+                    ITN MASS CAMPAIGN @2026
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- LOGIN PAGE -->
+
+    <div class="login-page">
+
+        <div class="login-card">
+
+            <div class="login-logo">
+                <img src="bednet.png" alt="ITN Bed Net">
+            </div>
+
+            <div class="login-title">
+                USER LOGIN
+            </div>
+
+            <form>
+
+                <div class="form-group">
+                    <label>Username</label>
+                    <input type="text" placeholder="Enter Username" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter Password" required>
+                </div>
+
+                <button type="submit" class="login-btn">
+                    Login
+                </button>
+
+                <button type="button" class="scan-btn">
+                    📷 Scan ID
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <div class="footer">
+        ICF-SL @2026
+    </div>
+
+</div>
+
+</body>
+</html>
