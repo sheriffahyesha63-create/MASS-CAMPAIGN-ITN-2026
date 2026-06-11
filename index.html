@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>ITN MASS CAMPAIGN 2026</title>
+
+<style>
+:root{
+    --plasma1:#0d0887;
+    --plasma2:#6a00a8;
+    --plasma3:#b12a90;
+    --plasma4:#e16462;
+    --plasma5:#fca636;
+    --plasma6:#f0f921;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, sans-serif;
+}
+
+body{
+    background:#f3f3f8;
+    min-height:100vh;
+}
+
+.container{
+    width:100%;
+    max-width:430px;
+    margin:auto;
+    min-height:100vh;
+    background:#f7f7fb;
+    display:flex;
+    flex-direction:column;
+}
+
+/* ==========================
+HEADER
+========================== */
+
+.header{
+    background:linear-gradient(135deg,
+    var(--plasma1),
+    var(--plasma2),
+    #ff007f);
+    padding:15px 10px;
+    color:#fff;
+}
+
+.header-row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:8px;
+}
+
+.icf-logo{
+    width:85px;
+    height:85px;
+    background:#fff;
+    border-radius:14px;
+    object-fit:contain;
+    padding:4px;
+}
+
+.title{
+    flex:1;
+    text-align:center;
+    font-size:20px;
+    font-weight:800;
+    line-height:1.2;
+}
+
+.nmcp-side{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.nmcp-logo{
+    width:85px;
+    height:85px;
+    background:#fff;
+    border-radius:14px;
+    object-fit:contain;
+    padding:4px;
+}
+
+.campaign{
+    font-size:10px;
+    font-weight:700;
+    margin-top:5px;
+    text-align:center;
+}
+
+/* ==========================
+PARTNERS
+========================== */
+
+.partners{
+    padding:15px 10px 10px;
+}
+
+.partners-title{
+    text-align:center;
+    color:#5d1ca5;
+    font-size:22px;
+    font-weight:800;
+    margin-bottom:15px;
+}
+
+.partners-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:8px;
+}
+
+.partner{
+    background:#fff;
+    border-radius:12px;
+    height:85px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+.partner img{
+    width:90%;
+    height:90%;
+    object-fit:contain;
+}
+
+/* ==========================
+BEDNET
+========================== */
+
+.bednet-section{
+    padding:10px;
+}
+
+.bednet-box{
+    background:#fff;
+    border-radius:22px;
+    border:2px solid #df67aa;
+    padding:8px;
+    text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.bednet-box img{
+    width:100%;
+    max-height:220px;
+    object-fit:contain;
+}
+
+/* ==========================
+MENU
+========================== */
+
+.menu{
+    padding:10px;
+    flex:1;
+}
+
+.menu-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+}
+
+.card{
+    background:#fff;
+    border-radius:18px;
+    border:2px solid #e25a9f;
+    height:120px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    text-decoration:none;
+    color:#4d2198;
+    box-shadow:0 4px 10px rgba(0,0,0,.08);
+}
+
+.card:hover{
+    transform:translateY(-2px);
+}
+
+.icon{
+    font-size:28px;
+    margin-bottom:8px;
+}
+
+.label{
+    font-size:14px;
+    font-weight:700;
+    padding:0 5px;
+}
+
+/* ==========================
+FOOTER
+========================== */
+
+.footer{
+    background:linear-gradient(135deg,
+    #ff007f,
+    #ff8533,
+    #ffe600);
+    text-align:center;
+    padding:14px;
+    font-size:18px;
+    font-weight:800;
+    color:#000;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+
+    <div class="header">
+
+        <div class="header-row">
+
+            <img src="Logo.png" class="icf-logo">
+
+            <div class="title">
+                National Malaria Control Program
+            </div>
+
+            <div class="nmcp-side">
+                <img src="NMCP.png" class="nmcp-logo">
+                <div class="campaign">
+                    ITN MASS CAMPAIGN @2026
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- PARTNERS -->
+
+    <div class="partners">
+
+        <div class="partners-title">
+            PARTNERS
+        </div>
+
+        <div class="partners-grid">
+
+            <div class="partner">
+                <img src="WHO.png">
+            </div>
+
+            <div class="partner">
+                <img src="GLOBALFUND.png">
+            </div>
+
+            <div class="partner">
+                <img src="UNICEF.png">
+            </div>
+
+            <div class="partner">
+                <img src="USAID.png">
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- BEDNET -->
+
+    <div class="bednet-section">
+
+        <div class="bednet-box">
+            <img src="bednet.png" alt="Bed Net">
+        </div>
+
+    </div>
+
+    <!-- DASHBOARD -->
+
+    <div class="menu">
+
+        <div class="menu-grid">
+
+            <a href="#" class="card">
+                <div class="icon">📊</div>
+                <div class="label">(1) Dashboard</div>
+            </a>
+
+            <a href="#" class="card">
+                <div class="icon">📝</div>
+                <div class="label">(2) Registration</div>
+            </a>
+
+            <a href="#" class="card">
+                <div class="icon">👥</div>
+                <div class="label">(3) Distribution</div>
+            </a>
+
+            <a href="#" class="card">
+                <div class="icon">👨‍👩‍👧‍👦</div>
+                <div class="label">(4) Attendees</div>
+            </a>
+
+            <a href="#" class="card">
+                <div class="icon">📋</div>
+                <div class="label">(5) Monitoring Checklist</div>
+            </a>
+
+            <a href="#" class="card">
+                <div class="icon">📦</div>
+                <div class="label">(6) Stock</div>
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <div class="footer">
+        ICF-SL @2026
+    </div>
+
+</div>
+
+</body>
+</html>
